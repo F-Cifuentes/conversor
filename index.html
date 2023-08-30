@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conversor de Monedas</title>
+  <!-- Include Chart.js library -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="./assets/css/style.css">  
+</head>
+<body>
+  <div class="container">
+    <h1>Conversor de Monedas</h1>
+    <label for="amount">Monto en pesos chilenos:</label>
+    <input type="number" id="amount" />
+    <label for="currency">Selección de moneda:</label>
+    <select id="currency">
+      <option value="dolar">Dólar Estadounidense (USD)</option>
+      <option value="euro">Euro (EUR)</option>
+    </select>
+    <button id="convertBtn" style="background-color: blue; color: white;">Convertir</button>
+
+    <h2>Resultado:</h2>
+    <p id="result"></p>
+  </div>
+
+  <div class="container">
+    <h2>Historial de Valor de Moneda:</h2>
+    <div class="chart-container">
+      <canvas id="chart"></canvas>
+    </div>
+  </div>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
